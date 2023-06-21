@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/butre"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000"
+                android:text="线圈内阻(Ω)：" />
+
+            <EditText
+                android:id="@+id/high_1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0.6"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000"
+                android:text="分布电容(pF)：" />
+
+            <EditText
+                android:id="@+id/high_2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="320"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000"
+                android:text="阻尼电阻(Ω)：" />
+
+            <EditText
+                android:id="@+id/high_3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="1000"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_4"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000"
+                android:text="线圈自感(mH)：" />
+
+            <EditText
+                android:id="@+id/high_4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="25"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000"
+                android:text="谐振频率（kHz)：" />
+
+            <EditText
+                android:id="@+id/high_5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="300"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_alert_dialog_yes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:background="#FFFFFF"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControllerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/first_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/second_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/chart_change"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="融合曲线"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/pre_dot"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="上一测点"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/next_dot"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="下一测点"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/point_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:text="测点号："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_log" />
+
+                    <TextView
+                        android:id="@+id/point_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="120"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_log" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/line_show"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="测线号：" />
+                    <TextView
+                        android:id="@+id/line_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="3" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/point_distence_show"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="点距（m）：" />
+                    <TextView
+                        android:id="@+id/point_distence_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/line_distence_show"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="线距（m）：" />
+                    <TextView
+                        android:id="@+id/line_distence_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="40" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/Current_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:text="小电流（A）："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_log" />
+                    <TextView
+                        android:id="@+id/Current_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/Voltage_show"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="大电流（A）：" />
+                    <TextView
+                        android:id="@+id/Voltage_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="15" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/time_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:text="小电流关断时间（µs）："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_log" />
+                    <TextView
+                        android:id="@+id/time_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/fre_show"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="大电流关断时间（µs）：" />
+                    <TextView
+                        android:id="@+id/fre_show1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_log"
+                        android:textColor="#000000"
+                        android:text="50" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="日志信息"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/time_data_siza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="数据量"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/log_button_chart"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="清空sd"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/log_button_clear"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/menu_clear_item"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/log_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11">
+
+            <TextView
+                android:id="@+id/log_text_view"
+                android:textSize="11sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/controller_button_calibration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="@string/button_start_carlibration" />
+
+            <Button
+                android:id="@+id/controller_button_selfcheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="预采集" />
+
+            <Button
+                android:id="@+id/controller_button_aquisition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="开始采集" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

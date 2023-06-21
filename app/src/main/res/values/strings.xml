@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TEM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_start_carlibration">开始校准</string>
+    <string name="menu_clear_item">清除日志</string>
+    <string name="text_paired_device">已配对设备</string>
+    <string name="text_scan_button">扫描新设备</string>
+    <string name="menu_connect_item">连接</string>
+    <string name="none_file_text">暂无数据 点击刷新</string>
+    <string name="button_start_selfcheck">预采集</string>
+    <string name="button_start_aquisition">开始采集</string>
+    <string name="text_paired_device1">附近蓝牙设备</string>
+    <string name="button_stop_aquisition">停止采集</string>
+    <string name="text_cloud_button">okhttp测试</string>
+</resources>

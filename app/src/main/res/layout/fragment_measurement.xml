@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/data_fragment_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="点击查看工区文件，长按压缩并分享文件"
+        android:textSize="10sp"
+        android:textColor="@color/black" />
+    <ListView
+        android:id="@+id/datafragment_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:padding="2dp" />
+
+</LinearLayout>

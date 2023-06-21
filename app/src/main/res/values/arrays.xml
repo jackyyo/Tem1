@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_collection_fre">
+        <item>2.4</item>
+        <item>0.2</item>
+    </string-array>
+    <string-array name="spinner_increase">
+        <item>1</item>
+        <item>自动</item>
+        <item>5</item>
+        <item>25</item>
+        <item>125</item>
+        <item>625</item>
+    </string-array>
+    <string-array name="spinner_increase1">
+        <item>1</item>
+        <item>5</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="spinner_coil_accept">
+        <item>GSTEM_H</item>
+        <item>GSTEM_M</item>
+        <item>GSTEM_L</item>
+        <item>自制圆形</item>
+        <item>自制方形</item>
+    </string-array>
+    <string-array name="spinner_coil_send">
+        <item>GSTEM_H</item>
+        <item>GSTEM_M</item>
+        <item>GSTEM_L</item>
+        <item>自制圆形</item>
+        <item>自制方形</item>
+    </string-array>
+    <string-array name="spinner_send_fre">
+        <item>1000</item>
+        <item>100</item>
+        <item>25</item>
+        <item>12.5</item>
+    </string-array>
+    <string-array name="spinner_curr_mol">
+        <item>1A</item>
+        <item>2A</item>
+        <item>4A</item>
+        <item>8A</item>
+    </string-array>
+    <string-array name="spinner_curr_mol1">
+        <item>15A</item>
+    </string-array>
+    <string-array name="spinner_magnification">
+        <item>10</item>
+        <item>80</item>
+        <item>40</item>
+        <item>20</item>
+        <item>5</item>
+        <item>2.5</item>
+        <item>1.25</item>
+    </string-array>
+    <string-array name="spinner_Sampling_rate">
+        <item>100ksps</item>
+        <item>1.8Msps</item>
+        <item>1Msps</item>
+        <item>500ksps</item>
+        <item>50ksps</item>
+    </string-array>
+    <string-array name="spinner_Sampling">
+        <item>2.5M</item>
+        <item>1.25M</item>
+        <item>625k</item>
+        <item>312.5k</item>
+        <item>156.25k</item>
+        <item>78.125k</item>
+    </string-array>
+    <string-array name="spinner_frequency">
+        <item>0.25Hz</item>
+        <item>0.625Hz</item>
+        <item>2.5Hz</item>
+        <item>6.25Hz</item>
+        <item>25Hz</item>
+        <item>62.5Hz</item>
+        <item>237.5Hz</item>
+        <item>625Hz</item>
+    </string-array>
+    <string-array name="spinner_Stacking_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="spinner_Significant_number">
+        <item>2</item>
+        <item>8</item>
+        <item>32</item>
+        <item>128</item>
+        <item>512</item>
+    </string-array>
+
+
+</resources>
